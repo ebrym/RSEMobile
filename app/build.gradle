@@ -1,0 +1,44 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 28
+    buildToolsVersion '28.0.3'
+    defaultConfig {
+        applicationId "com.redstar.rsemobile"
+        minSdkVersion 14
+        targetSdkVersion 28
+        versionCode 203
+        versionName "2.0.3"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+    productFlavors {
+    }
+    sourceSets {
+        main.jniLibs.srcDirs = ['libs']
+        test.jniLibs.srcDirs = ['libs']
+    }
+}
+
+dependencies {
+    implementation 'com.android.support.constraint:constraint-layout:1.0.2'
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    testCompile 'junit:junit:4.12'
+    compile 'com.android.support:design:23.4.0'
+    compile 'com.android.support:appcompat-v7:23.4.0'
+    compile 'com.android.support:support-v4:23.4.0'
+    compile 'com.google.android.gms:play-services:8.1.0'
+    implementation files('libs/platform_sdk_v2.2.3.jar')
+    implementation files('libs/zbar.jar')
+}
+
+
+
+
+
+
+

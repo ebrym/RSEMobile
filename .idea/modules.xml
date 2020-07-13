@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/RSEMobile.iml" filepath="$PROJECT_DIR$/RSEMobile.iml" group="RSEMobile" />
+      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" group="RSEMobile/app" />
+    </modules>
+  </component>
+</project>
